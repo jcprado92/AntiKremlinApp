@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Trello Link 
+https://trello.com/b/JdsfVklp/youtube-project
+
+## Group Members
+Adnan, David, Jede, John
+
 ## Available Scripts
 
 In the project directory, you can run:
