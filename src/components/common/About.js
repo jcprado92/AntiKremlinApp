@@ -6,7 +6,8 @@ import John from "../Creators/John";
 import { Link } from "react-router-dom"
 
 function About() {
-  return (<>
+  return (
+  <>
   <div>About</div>
   <p>ADJJ- Adnan-David-Jede-John</p>
   <p>
@@ -24,7 +25,8 @@ function About() {
     <img src="image of John" alt="John"/>
   </p>
   
-  </>)
+  </>
+  )
 }
 
 export default About;
