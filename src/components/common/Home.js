@@ -1,9 +1,15 @@
 import React from 'react'
 
-function Home() {
-  return (
-    <div>Home</div>
-  )
-}
 
-export default Home
+
+export default function Home() {
+  return (
+      <section>
+              <h2>Welcome to AntiKremlin Tele App</h2>
+             
+                
+              
+          
+      </section>
+  );
+};

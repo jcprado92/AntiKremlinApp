@@ -15,13 +15,19 @@ function About() {
     </Link> 
   </p>
   <p>
+  <Link to ="/Creators/David">
     <img src="image of David" alt="David"/>
+    </Link> 
   </p>
   <p>
+  <Link to ="/Creators/Jede">
     <img src="image of Jede" alt="Jede"/>
+    </Link> 
   </p>
   <p>
+  <Link to ="/Creators/John">
     <img src="image of John" alt="John"/>
+    </Link> 
   </p>
   
   </>)
