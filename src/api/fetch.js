@@ -6,6 +6,7 @@ const getData = () => {
         .then(data => console.log(data))
 }
 
+
 getData();
     
 
@@ -18,3 +19,4 @@ getData();
 //                 q: ,
 //                 safeSearch:none,
 //                 key: actualKey}
+
