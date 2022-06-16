@@ -1,8 +1,14 @@
 import React from 'react'
+import david from "./assets/david.jpg";
 
 function David() {
-  return (
-    <div>David</div>
+
+    const imageURL = david;
+    return (
+      <div className='images'>
+        <img src={imageURL} alt="david"/>
+  
+      </div>
   )
 }
 

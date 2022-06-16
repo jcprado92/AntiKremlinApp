@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import adnan from "./assets/adnan.jpeg";
 
 function Adnan() {
+  const imageURL = adnan;
   return (
-    <div>Adnan</div>
+    <div className='images'>
+      <img src={imageURL} alt="adnan"/>
+
+    </div>
   )
 }
 
