@@ -7,7 +7,7 @@ const getData = () => {
 }
 
 
-getData();
+// getData();
     
 
 
