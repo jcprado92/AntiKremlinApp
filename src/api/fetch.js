@@ -6,4 +6,4 @@ const getData = () => {
         .then(data => console.log(data))
 }
 
-getData();
+// getData();

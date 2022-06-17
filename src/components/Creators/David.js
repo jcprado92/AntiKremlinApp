@@ -1,9 +1,9 @@
-import React from 'react'
+// import React from 'react'
 
-function David() {
-  return (
-    <div>David</div>
-  )
-}
+// function David() {
+//   return (
+//     <div>David</div>
+//   )
+// }
 
-export default David
+// export default David
