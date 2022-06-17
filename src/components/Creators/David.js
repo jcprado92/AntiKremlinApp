@@ -1,9 +1,17 @@
-// import React from 'react'
 
-// function David() {
-//   return (
-//     <div>David</div>
-//   )
-// }
+import React from 'react'
+import david from "./assets/david.jpg";
 
-// export default David
+function David() {
+
+    const imageURL = david;
+    return (
+      <div className='images'>
+        <img src={imageURL} alt="david"/>
+  
+      </div>
+  )
+}
+
+
+export default David
