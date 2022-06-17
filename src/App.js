@@ -13,9 +13,9 @@ import { useEffect } from 'react'
 
 function App() {
 
-  // useEffect(() => {
-  //   getData()
-  // }, [])
+  useEffect(() => {
+    getData()
+  }, [])
 
   return (
     <Router>

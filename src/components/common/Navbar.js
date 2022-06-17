@@ -12,26 +12,24 @@ function Navbar() {
 
   return (
     <header>
-      <article>
+      <nav className="mainnav">
         <h2>
           <Link to="/">TeleApp</Link>
         </h2>
         <h2>
-        
           <Link to="/">Home</Link>
         </h2>
         <h2>
-      
           <Link to="/About">About</Link>
         </h2>
+      </nav>
 
-        <aside>
-          <button onClick={handleClick} type="submit" value="">
-            Search
-          </button>
-          <input type="text"></input>
-        </aside>
-      </article>
+      <aside>
+        <input type="text" placeholder="Search Videos"></input>
+        <button onClick={handleClick} type="submit" value="">
+          Search
+        </button>
+      </aside>
     </header>
   );
 }

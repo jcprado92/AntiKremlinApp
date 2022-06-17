@@ -1,4 +1,5 @@
 import React from "react";
+
 import Adnan from "../Creators/Adnan";
 import David from "../Creators/David";
 import Jede from "../Creators/Jede";
@@ -6,12 +7,13 @@ import John from "../Creators/John";
 import { Link } from "react-router-dom"
 
 function About() {
-  return (<>
+  return (
+  <>
   <div>About</div>
   <p>ADJJ- Adnan-David-Jede-John</p>
   <p>
     <Link to ="/Creators/Adnan">
-    <img src="image of Adnan" alt="Adnan"/>
+    <img src="./assets/adnan.jpeg" alt="Adnan"/>
     </Link> 
   </p>
   <p>
@@ -30,7 +32,8 @@ function About() {
     </Link> 
   </p>
   
-  </>)
+  </>
+  )
 }
 
 export default About;
