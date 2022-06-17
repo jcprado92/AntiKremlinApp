@@ -1,3 +1,4 @@
+
 import React from 'react'
 import david from "./assets/david.jpg";
 
@@ -11,5 +12,6 @@ function David() {
       </div>
   )
 }
+
 
 export default David
