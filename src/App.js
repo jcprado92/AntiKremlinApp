@@ -8,6 +8,7 @@ import About from "./components/common/About";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { getData } from "./api/fetch.js";
 import { useEffect } from "react";
+import VideosIndex from "./components/VideosIndex";
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/videos" element={<VideosIndex />} />
         </Routes>
         {/* <Footer /> */}
       </div>
