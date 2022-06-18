@@ -9,7 +9,7 @@ function Navbar() {
     const { value } = e.target;
     console.log(value);
   };
-
+// this is super frustrating
   return (
     <header>
       <nav className="navBar"> 
@@ -36,3 +36,4 @@ function Navbar() {
 }
 
 export default Navbar;
+// here we go!!
