@@ -8,15 +8,19 @@ import About from './components/common/About';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { getData } from './api/fetch.js'
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
+import VideosIndex from './components/VideosIndex';
 
 
 
 
 function App() {
+  const [searches , setSearches] = useState([]);
 
   useEffect(() => {
     getData()
+    .then((videos) => setSearches(videos))
+    .then((console.log(videos)));
   }, [])
 
   return (
@@ -27,6 +31,7 @@ function App() {
       <Navbar />
      <Routes>
      <Route path="/" element= {< Home />} />
+     <Route path="/" element={<VideosIndex getData={getData}/>} />
       </Routes>
 
       {/* <Footer />  */}

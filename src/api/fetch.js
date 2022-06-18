@@ -1,9 +1,9 @@
 const key = process.env.REACT_APP_API_KEY;
 
 export function getData(){
-    fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${key}&q=kidcudi`)
+    return fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${key}&q=arianagrande`)
         .then(response => response.json())
-        .then(data => console.log(data))
+        // .then(data => console.log(data))
 }
 
 
