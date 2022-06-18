@@ -2,13 +2,10 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import About from "./About";
+import Search from "../Search";
 
-function Navbar() {
-  const handleClick = (e) => {
-    e.preventDefault();
-    const { value } = e.target;
-    console.log(value);
-  };
+function Navbar({ setSearch, setMaxResult }) {
+ 
 // this is super frustrating
   return (
     <header>
@@ -21,15 +18,12 @@ function Navbar() {
           <Link to="/">Home</Link>
         </h2>
         <h2>
-          <Link to="/About">About</Link>
+          <Link to="/about">About</Link>
         </h2>
       </nav>
 
       <aside>
-        <input type="text" placeholder="Search Videos"></input>
-        <button onClick={handleClick} type="submit" value="">
-          Search
-        </button>
+        <Search setSearch= {setSearch} setMaxResult={setMaxResult}/>
       </aside>
     </header>
   );

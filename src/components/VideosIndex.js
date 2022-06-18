@@ -1,9 +1,12 @@
 import React from 'react'
+import YouTube from 'react-youtube';
 import ShowVideo from './ShowVideo'
 
-function VideosIndex() {
+function VideosIndex({ videos } ) {
   return (
-    <div>VideosIndex</div>
+    <div>
+      {videos.map((video) => <YouTube videoId={video.id.videoId}/>)}
+    </div>
   )
 }
 
