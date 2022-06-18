@@ -12,7 +12,8 @@ function Navbar() {
 
   return (
     <header>
-      <nav className="mainnav">
+      <nav className="navBar"> 
+      {/* // div className= navBar__left */}
         <h2>
           <Link to="/">TeleApp</Link>
         </h2>
