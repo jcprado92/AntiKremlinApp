@@ -34,6 +34,7 @@ function Navbar() {
     </header>
   );
 }
+//trying to merge 
 
 export default Navbar;
 // here we go!!
