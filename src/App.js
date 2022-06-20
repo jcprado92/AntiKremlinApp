@@ -5,12 +5,12 @@ import Navbar from "./components/common/Navbar";
 import Home from "./components/common/Home";
 import ShowVideo from "./components/ShowVideo";
 import VideosIndex from "./components/VideosIndex";
-
 import About from './components/common/About';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { useEffect, useState } from "react";
+import CreatorCard from "./components/CreatorCard";
 
 function App() {
   const [videos, setVideos] = useState([]);
@@ -35,9 +35,10 @@ function App() {
         <div className="main__videos">
           <Routes>
             <Route path="/" element={<Home videos={videos}/>} />
-
             <Route path="/videos" element={<VideosIndex videos={videos} />} />
             <Route path="/videos/:id" element={<ShowVideo videos={videos} />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/about/:id" element={<CreatorCard/>} />
             {/* <Footer /> */}
           </Routes>
         </div>
