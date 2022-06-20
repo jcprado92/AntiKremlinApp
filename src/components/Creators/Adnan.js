@@ -5,7 +5,7 @@ function Adnan() {
   const imageURL = adnan;
   return (
     <div className='images'>
-      <img src={imageURL} alt="adnan"/>
+      <img style={{width:"120px", height:"120px"}} src={imageURL} alt="adnan"/>
 
     </div>
   )

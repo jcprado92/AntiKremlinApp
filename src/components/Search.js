@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Search({ setSearch, setMaxResult }) {
-  const [inputSearch, setInputSearch] = useState("");
+  const [inputSearch, setInputSearch] = useState("Pursuit");
   const [inputMaxResult, setInputMaxResult] = useState(8);
   const navigate = useNavigate();
 
@@ -10,7 +10,7 @@ function Search({ setSearch, setMaxResult }) {
     e.preventDefault();
     setSearch(inputSearch);
     setMaxResult(inputMaxResult);
-    setInputMaxResult(8);
+    // setInputMaxResult(8);
     setInputSearch("");
     navigate("/videos");
   };

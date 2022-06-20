@@ -1,6 +1,6 @@
 import React from 'react'
 import YouTube from 'react-youtube';
-import ShowVideo from './ShowVideo'
+
 
 function VideosIndex({ videos } ) {
   return (

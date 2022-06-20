@@ -1,7 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import About from "./About";
 import Search from "../Search";
 
 function Navbar({ setSearch, setMaxResult }) {
