@@ -1,0 +1,14 @@
+.videoCard {
+    display: flex;
+    margin-bottom: 40px;
+    width: 270px;
+}
+.videoCard-thumbnail {
+    height: 140px;
+    width: 250px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 20px 0 20px;      
+}
+
+

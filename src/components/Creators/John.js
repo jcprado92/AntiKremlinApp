@@ -1,8 +1,8 @@
 import React from 'react';
-import john from './assets/john.jpeg';
+import john8 from './assets/john8.png';
 
 function John() {
-  const imageURL = john;
+  const imageURL = john8;
   return (
     <div className='images'>
       <img src={imageURL} alt="john"/>

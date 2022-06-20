@@ -1,3 +1,15 @@
-body{
-margin: 0;
+
+/* .App {
+    display: flex;
+
+} */
+.main__videos {
+    display: flex;
+
 }
+
+/* .app__sidebar {
+    flex: 0.2;
+    background-color: rgb(231, 226, 226);
+
+} */
