@@ -1,13 +1,18 @@
-import React from 'react'
-import YouTube from 'react-youtube';
-import ShowVideo from './ShowVideo'
+import React from "react";
+// import YouTube from "react-youtube";
+import "./VideosIndex.css";
+import VideoCard from "./VideoCard";
 
-function VideosIndex({ videos } ) {
+function VideosIndex({ videos }) {
   return (
-    <div>
-      {videos.map((video) => <YouTube videoId={video.id.videoId}/>)}
+    <div className="videos-display">
+      <ul>
+        {videos.map((video) => {
+          return <VideoCard key={video.id.videoId} video={video} />;
+        })}
+      </ul>
     </div>
-  )
+  );
 }
 
-export default VideosIndex
+export default VideosIndex;

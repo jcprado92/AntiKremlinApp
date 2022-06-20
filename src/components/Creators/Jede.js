@@ -1,8 +1,8 @@
 import React from 'react';
-import jede from "./assets/jede.jpeg";
+import jede8 from "./assets/jede8.png";
 
 function Jede() {
-  const imageURL = jede;
+  const imageURL = jede8;
   return (
     <div className='images'>
       <img src={imageURL} alt="jede"/>
