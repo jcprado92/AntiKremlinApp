@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import About from "./About";
+// import About from "./About";
 import Search from "../Search";
 import "./Navbar.css";
 

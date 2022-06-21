@@ -8,7 +8,7 @@ import john8 from "../assets/john8.png";
 // import John from "../Creators/John";
 // import { Link } from "react-router-dom";
 import CreatorCard from "../CreatorCard";
-import "./About.css"
+import "./About.css";
 
 const imgURL = adnan8;
 const imgURL2 = jede8;
@@ -43,15 +43,15 @@ function About() {
   return (
     <div className="about">
       <div className="us">
-        <p>Us - the Creators</p>
-        <p>AJJ - Adnan-Jede-John</p>
+        <h3>Us - the Creators</h3>
+        <h4>AJJ - Adnan-Jede-John</h4>
+        <p>
+          This project was not easy. Although we do not see all out details, we
+          are the best collaborative team EVER! 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️
+        </p>
       </div>
-      <p>
-        This project was not easy. Although we do not see all out details, we
-        are the best collaborative team EVER! 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️
-      </p>
-      <article className="creators">
-        <ul>
+      <article>
+        <ul className="creators">
           {creators.map((creator) => {
             return (
               <CreatorCard

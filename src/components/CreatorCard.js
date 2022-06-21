@@ -8,8 +8,8 @@ function CreatorCard( {creator, img} ) {
   const { id } = useParams()
   const selectedCreator = creator.id;
   return (
-    <div className="creatorCard">
-      <li key={creator.id}>
+        // <div className="creatorCard">
+    <li className="creatorCard" key={creator.id}>
         {/* <Link to={`${creator.id}`}> */}
 
           <img src={img} alt={creator.name} />
@@ -18,8 +18,8 @@ function CreatorCard( {creator, img} ) {
           <p>{creator.description}</p>
           <p>LinkedIn: {creator.linkedIn}</p>
         {/* </Link> */}
-      </li>
-    </div>
+      {/* </div> */}
+    </li>
   );
 }
 
