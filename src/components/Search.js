@@ -9,11 +9,12 @@ function Search({ setSearch, setMaxResult }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSearch(inputSearch);
-    setMaxResult(inputMaxResult);
+    // setSearch(inputSearch);
+    // setMaxResult(inputMaxResult);
     setInputMaxResult(8);
     setInputSearch("");
-    navigate("/videos");
+    navigate(`/videos/${inputSearch}/${inputMaxResult}`);
+
   };
   
   return (

@@ -22,6 +22,7 @@
 .navBar__search {
     display:flex;
     align-items: center;
+    float: right;
     width: 60%;
     border: none;
 }

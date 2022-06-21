@@ -1,6 +1,10 @@
-
-/* .App {
-    display: flex;
+/* 
+.App {
+    display: grid;
+    grid-template-areas: 
+    "n n n"
+    "a j p"
+    "f f f";
 
 } */
 .main__videos {
