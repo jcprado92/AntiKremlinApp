@@ -20,3 +20,7 @@ const ShowVideo = ({ videos }) => {
 };
 
 export default ShowVideo;
+
+//add another fetch/ request for a single video 
+
+//do not iterate through videos

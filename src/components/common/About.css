@@ -1,0 +1,42 @@
+.about {
+    display: grid;
+    grid-template-areas: 
+    "us us us"
+    "a a a"
+    "i i i";
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 300px ;
+    /* flex-flow: wrap; */
+}
+
+.about > p {
+    text-align: center;
+
+}
+
+.us {
+    grid-area: us;
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+.creators {
+    grid-area: a;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+/* .creatorCard { */
+    /* display: grid; */
+    /* grid-area: a; */
+/* } */
+
+.creatorCard > img {
+    height: 250px;
+    width: 250px;
+    border-radius: 12px;
+
+}

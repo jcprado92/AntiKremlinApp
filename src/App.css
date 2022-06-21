@@ -1,6 +1,16 @@
+<<<<<<< HEAD
 
 .App {
     display: flex;
+=======
+/* 
+.App {
+    display: grid;
+    grid-template-areas: 
+    "n n n"
+    "a j p"
+    "f f f";
+>>>>>>> 259d06458cf0badc2866a846c751ff4c63357e06
 
 } */
 .main__videos {
