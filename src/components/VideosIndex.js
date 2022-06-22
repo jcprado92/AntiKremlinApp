@@ -12,7 +12,8 @@ function VideosIndex({ videos, setVideos }) {
       `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=${maxResult}&q=${search}&type=video&key=${process.env.REACT_APP_API_KEY}`
     )
       .then((response) => response.json())
-      .then((data) => setVideos(data.items));
+      .then((data) => setVideos(data.items))
+      .catch(err => console.log(err))
   }, [search, maxResult]);
 
   return (
