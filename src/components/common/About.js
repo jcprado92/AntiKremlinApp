@@ -19,8 +19,9 @@ const creators = [
     id: 1,
     img: imgURL,
     status: "Pursuit Fellow",
-    description: "Loves Ronaldo",
-    linkedIn: "",
+    description: "Coding, computer software & hardware",
+    linkedIn: "https://www.linkedin.com/in/adnan-abubakar-adams/",
+    brief: ""
   },
   {
     name: "Jede",
@@ -28,15 +29,17 @@ const creators = [
     img: imgURL2,
     status: "Pursuit Fellow",
     description: "",
-    linkedIn: "",
+    linkedIn: "https://www.linkedin.com/in/jedeb/",
+    brief: ""
   },
   {
     name: "John",
     id: 3,
     img: imgURL3,
     status: "Pursuit Fellow",
-    description: "",
-    linkedIn: "",
+    description: "Coder, avid cycler, and photographer!",
+    linkedIn: "https://www.linkedin.com/in/johnprado/",
+    brief: ""
   },
 ];
 function About() {

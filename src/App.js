@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/common/Navbar";
-// import Footer from './components/common/Footer';
+import Footer from './components/common/Footer';
 import Home from "./components/common/Home";
 import ShowVideo from "./components/ShowVideo";
 import VideosIndex from "./components/VideosIndex";
@@ -43,7 +43,7 @@ function App() {
             <Route path="/videos/:id" element={<ShowVideo videos={videos} />} />
             <Route path="/about" element={<About />} />
             <Route path="/about/:id" element={<CreatorCard/>} />
-            {/* <Footer /> */}
+            <Footer />
           </Routes>
         </div>
       </Router>

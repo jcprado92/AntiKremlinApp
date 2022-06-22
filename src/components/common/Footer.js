@@ -1,9 +1,11 @@
-import React from 'react'
+import "./Footer.css";
 
-function Footer() {
+export const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer>
+      <p>ScreenViews. An application created by YOUR_NAME.</p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
