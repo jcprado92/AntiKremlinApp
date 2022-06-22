@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import YouTube from "react-youtube";
 import ErrorMessage from "./common/ErrorMessage";
+import "./ShowVideo.css"
 
 const ShowVideo = ({ videos }) => {
   let { id } = useParams();
@@ -36,9 +37,12 @@ const ShowVideo = ({ videos }) => {
   });
 
   const handleClick = () => {
-    navigate("/videos/:id");
+    navigate("/videos");
   };
 
+  if(!selectedVideo){
+    return <ErrorMessage/>
+  }
 
   return (
     <div>
@@ -49,6 +53,7 @@ const ShowVideo = ({ videos }) => {
       </div>
       <aside><button onClick={handleClick}>Take Me Back</button></aside>
       <br></br>
+      
       <h3>Comments</h3>
       <div className="comment-div">
         <form className="form" onSubmit={commentSubmit}>
