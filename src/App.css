@@ -11,6 +11,10 @@
     display: flex;
 
 }
+footer{
+    display: flex;
+    background-color: rgb(231,226,226);
+}
 
 /* .app__sidebar {
     flex: 0.2;

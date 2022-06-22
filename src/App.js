@@ -43,8 +43,8 @@ function App() {
             <Route path="/videos/:id" element={<ShowVideo videos={videos} />} />
             <Route path="/about" element={<About />} />
             <Route path="/about/:id" element={<CreatorCard/>} />
-            <Footer />
           </Routes>
+            <Footer/>
         </div>
       </Router>
     </div>

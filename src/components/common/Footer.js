@@ -2,7 +2,7 @@ import "./Footer.css";
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <p>ScreenViews. An application created by YOUR_NAME.</p>
     </footer>
   );
