@@ -8,20 +8,42 @@ background-color: Irgba(0, 0, 0, 0.5);
 display: flex;
 align-items: center;
 justify-content: center;
+opacity: 0;
+transition: all 0.3s ease-in-out;
+pointer-events: none;
 }
 
-.modal-content{
+.modal.enter-done {
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.modal.exit {
+    opacity: 0;
+}
+
+.modal.show {
+    opacity: 1;
+    pointer-events: visible;
+}
+.modal-content {
     width: 500px;
     background-color:
     _#fff;
+    transform: translateY(-200px);
+    transition: all 0.3s ease-in-out;
     }
-    .modal-header, .modal-footer{
+.modal.modal.enter-done 
+.modal.show .modal-content {
+        transform: translateY(0);
+    }
+.modal-header, .modal-footer {
     padding: 10px;
     }
-    .modal-title{
+.modal-title {
     margin: 0;
     }
-    .modal-body {
+.modal-body {
     padding: 10px;
     border-top: 1px solid
     _#eee;

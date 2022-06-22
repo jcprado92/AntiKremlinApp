@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/common/Navbar";
-import Footer from './components/common/Footer';
+// import Footer from './components/common/Footer';
 import Home from "./components/common/Home";
 import ShowVideo from "./components/ShowVideo";
 import VideosIndex from "./components/VideosIndex";
@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="App">
       <button onClick={() => setShow(true)}>Show Modal</button>
-      <Modal show={show}/>
+      <Modal title="My Modal"show={show} onClose={() => setShow(false)}><p>This is modal body</p></Modal>
       <Router>
         <Navbar setSearch={setSearch} setMaxResult={setMaxResult} />
         <div className="main__videos">
@@ -44,7 +44,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/about/:id" element={<CreatorCard/>} />
           </Routes>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
       </Router>
     </div>
