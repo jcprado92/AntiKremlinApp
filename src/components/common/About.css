@@ -27,6 +27,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+    /* opacity: 1; */
 }
 
 /* .creatorCard { */
@@ -40,3 +41,12 @@
     border-radius: 12px;
 
 }
+/* .creators:hover {
+Color: #470000;
+offset: {
+    width: 0; 
+    height: 1;
+};
+opacity: 3;
+elevation: 1;
+} */
