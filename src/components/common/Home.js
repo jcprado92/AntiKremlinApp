@@ -6,7 +6,7 @@ export default function Home({ videos, setVideos }) {
 
   useEffect(() => {
     fetch(
-      `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&type=video&key=${process.env.REACT_APP_API_KEY}`
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&q=spongebobdidwhat&maxResults=20&type=video&key=${process.env.REACT_APP_API_KEY}`
     )
       .then((response) => response.json())
       .then((data) => setVideos(data.items));
@@ -32,5 +32,6 @@ export default function Home({ videos, setVideos }) {
 //catch( navigate to error component )
 
 //have state of error equal to boolean 
+
 //create modal component  error state in app
 

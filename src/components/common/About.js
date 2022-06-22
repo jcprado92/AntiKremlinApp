@@ -19,7 +19,7 @@ const creators = [
     id: 1,
     img: imgURL,
     status: "Pursuit Fellow",
-    description: "Coding, computer software & hardware",
+    description: "Coding, computer software & hardware!",
     linkedIn: "https://www.linkedin.com/in/adnan-abubakar-adams/",
     brief: ""
   },
@@ -28,7 +28,7 @@ const creators = [
     id: 2,
     img: imgURL2,
     status: "Pursuit Fellow",
-    description: "",
+    description: "Artist, Tango dancer, DJ, software engineer!",
     linkedIn: "https://www.linkedin.com/in/jedeb/",
     brief: ""
   },
