@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import YouTube from "react-youtube";
+import ErrorMessage from "./common/ErrorMessage";
 
 const ShowVideo = ({ videos }) => {
   let { id } = useParams();
@@ -8,6 +9,7 @@ const ShowVideo = ({ videos }) => {
 
   // if (!videos) return;
   // <div>Taking a minute to load...</div>;
+
 
   const selectedVideo = videos.find((video) => video.id.videoId === id);
 
@@ -36,6 +38,7 @@ const ShowVideo = ({ videos }) => {
   const handleClick = () => {
     navigate("/videos/:id");
   };
+
 
   return (
     <div>
@@ -91,3 +94,5 @@ export default ShowVideo;
 //add another fetch/ request for a single video
 
 //do not iterate through videos
+
+//if we want a single vide but no data from videos, just rended the specific id from video

@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { useEffect, useState } from "react";
 import CreatorCard from "./components/CreatorCard";
+import ErrorMessage from "./components/common/ErrorMessage";
 
 function App() {
   const [videos, setVideos] = useState([]);
@@ -43,6 +44,7 @@ function App() {
             <Route path="/videos/:id" element={<ShowVideo videos={videos} />} />
             <Route path="/about" element={<About />} />
             <Route path="/about/:id" element={<CreatorCard/>} />
+            <Route path="*/" element={<ErrorMessage/>}/>
           </Routes>
             {/* <Footer/> */}
         </div>
