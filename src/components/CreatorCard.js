@@ -1,5 +1,4 @@
 import React from "react";
-import adnan8 from "./assets/adnan8.png"
 import { Link, useParams } from "react-router-dom";
 import "./common/About.css"
 
@@ -13,10 +12,12 @@ function CreatorCard( {creator, img} ) {
         {/* <Link to={`${creator.id}`}> */}
 
           <img src={img} alt={creator.name} />
-          <h4>{creator.name}</h4>
+          <h3>{creator.name}</h3>
           <h4>{creator.status}</h4>
+          <p>{creator.brief}</p>
           <p>{creator.description}</p>
-          <p>LinkedIn: {creator.linkedIn}</p>
+          <a href="https://www.linkedin.com/in/adnan-abubakar-adams/">LinkedIn</a>
+
         {/* </Link> */}
       {/* </div> */}
     </li>
