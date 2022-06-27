@@ -49,7 +49,7 @@ function About() {
         <h3>Us - the Creators</h3>
         <h4>AJJ - Adnan-Jede-John</h4>
         <p>
-          This project was not easy. Although we do not see all out details, we
+          This project was not easy. Although we do not see all our details, we
           are the best collaborative team EVER! 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️
         </p>
       </div>

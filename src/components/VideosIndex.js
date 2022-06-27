@@ -28,3 +28,5 @@ function VideosIndex({ videos, setVideos }) {
 }
 
 export default VideosIndex;
+
+//pass as state when you navigate

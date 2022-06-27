@@ -37,7 +37,7 @@ const ShowVideo = ({ videos }) => {
   });
 
   const handleClick = () => {
-    navigate("/videos");
+    navigate("/videos/${search}/${maxResult}");
   };
 
   if(!selectedVideo){
