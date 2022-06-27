@@ -1,7 +1,7 @@
 .navBar {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    justify-content: center;
     padding: 20px;
     position: sticky;
     top: 0;
@@ -11,23 +11,23 @@
 }
 .navBar__left {
     height: 25px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: space-between; 
-    margin-left: 20px;
+    margin: 0 10px;
 }
 .navBar__left > h5 {
     padding-right: 7px; 
 }
 .navBar__search {
-    display:flex;
-    align-items: center;
-    float: right;
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
     width: 60%;
     border: none;
 }
 .navBar__search > input {
-    flex: 1;
+    flex: 1 1 auto;
     border: none;
     background-color: transparent;
     color: teal;
@@ -44,5 +44,9 @@
    width:60px;
    background-color: rgb(103, 142, 142); 
     padding-left: 7px;
+}
+.logo {
+    height:50px;
+    width: 50Px;
 }
     

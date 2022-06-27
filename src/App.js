@@ -19,30 +19,20 @@ function App() {
   const [maxResult, setMaxResult] = useState(5);
   const [show, setShow] = useState(false)
  
-  
-
-  // useEffect(() => {
-  //   fetch(
-  //     `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=${maxResult}&q=${search}&type=video&key=${process.env.REACT_APP_API_KEY}`
-  //   )
-  //     .then((response) => response.json())
-  //     .then((data) => setVideos(data.items));
-  // }, [search, maxResult]);
-
 
   return (
     <div className="App">
-      <button onClick={() => setShow(true)}>Show Modal</button>
-      <Modal title="My Modal"show={show} onClose={() => setShow(false)}><p>This is modal body</p></Modal>
+      {/* <button onClick={() => setShow(true)}>Show Modal</button>
+      <Modal title="My Modal"show={show} onClose={() => setShow(false)}><p>This is modal body</p></Modal> */}
       <Router>
         <Navbar setSearch={setSearch} setMaxResult={setMaxResult} />
-        <div className="main__videos">
+        <div className="main">
           <Routes>
             <Route path="/" element={<Home setVideos={setVideos} videos={videos}/>} />
             <Route path="/videos/:search/:maxResult" element={<VideosIndex setVideos={setVideos} videos={videos} />} />
             <Route path="/videos/:id" element={<ShowVideo videos={videos} />} />
             <Route path="/about" element={<About />} />
-            <Route path="/about/:id" element={<CreatorCard/>} />
+            <Route path="/about/:id" element={<CreatorCard />} />
           </Routes>
             {/* <Footer/> */}
         </div>

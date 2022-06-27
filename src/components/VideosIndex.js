@@ -16,13 +16,18 @@ function VideosIndex({ videos, setVideos }) {
   }, [search, maxResult]);
 
   return (
-    <div className="videos-display">
-      <ul>
+    <>
+    <div className="search-display">
+      <h3>Your Search Results</h3> 
+    </div>
+     
+      <div className="videos-display">
         {videos.map((video) => {
           return <VideoCard key={video.id.videoId} video={video} />;
         })}
-      </ul>
+     
     </div>
+    </>
   );
 }
 

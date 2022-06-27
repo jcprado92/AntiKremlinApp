@@ -14,11 +14,11 @@ export default function Home({ videos, setVideos }) {
   
   return (
     <div className="videos-home">
-      <ul>
+      <div className="videos-display">
         {videos.map((video) => {
           return <VideoCard key={video.id.videoId} video={video} />;
         })}
-      </ul>
+      </div>
     </div>
   );
 };

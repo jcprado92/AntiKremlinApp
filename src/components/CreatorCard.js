@@ -1,26 +1,22 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
 import "./common/About.css"
 
-function CreatorCard( {creator, img} ) {
-  // const imgURL = adnan8;
-  const { id } = useParams()
+function CreatorCard( {props} ) {
+const {id, name, status, brief, description, linkedIn} = props;
+ 
   const selectedCreator = creator.id;
   return (
-        // <div className="creatorCard">
-    <li className="creatorCard" key={creator.id}>
-        {/* <Link to={`${creator.id}`}> */}
-
-          <img src={img} alt={creator.name} />
+       
+    <div className="creatorCard" key={creator.id}>
+  
+          <img src={creator.img} alt={creator.name} />
           <h3>{creator.name}</h3>
           <h4>{creator.status}</h4>
           <p>{creator.brief}</p>
           <p>{creator.description}</p>
-          <a href="https://www.linkedin.com/in/adnan-abubakar-adams/">LinkedIn</a>
+          <p>{creator.linkedIn}</p>
 
-        {/* </Link> */}
-      {/* </div> */}
-    </li>
+    </div>
   );
 }
 

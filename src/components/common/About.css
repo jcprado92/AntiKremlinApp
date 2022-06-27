@@ -1,14 +1,9 @@
 .about {
-    display: grid;
-    grid-template-areas: 
-    "us us us"
-    "a a a"
-    "i i i";
-    gap: 20px;
-    justify-content: center;
-    margin-top: 50px;
-    margin-left: 475px ;
-    /* flex-flow: wrap; */
+    margin-top: 16px;
+    width: 400px;
+    padding-right: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
 }
 
 .about > p {
@@ -17,22 +12,27 @@
 }
 
 .us {
-    grid-area: us;
+
     text-align: center;
     /* font-weight: bold; */
 }
 
-.creators {
-    grid-area: a;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-}
 
-/* .creatorCard { */
-    /* display: grid; */
-    /* grid-area: a; */
-/* } */
+
+.creatorCard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    height: 350px;
+    margin-top: 40px;
+    width: 300px;
+    float: left;
+    background-color: white;
+   
+    padding: 20px;
+    border-radius: 10px;
+}
 
 .creatorCard > img {
     height: 250px;

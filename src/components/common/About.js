@@ -3,13 +3,12 @@ import React from "react";
 import adnan8 from "../assets/adnan8.png";
 import jede8 from "../assets/jede8.png";
 import john8 from "../assets/john8.png";
-// import Adnan from "../Creators/Adnan";
-// import Jede from "../Creators/Jede";
-// import John from "../Creators/John";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import CreatorCard from "../CreatorCard";
 import "./About.css";
 
+
+function About() {
 const imgURL = adnan8;
 const imgURL2 = jede8;
 const imgURL3 = john8;
@@ -41,8 +40,8 @@ const creators = [
     linkedIn: "https://www.linkedin.com/in/johnprado/",
     brief: ""
   },
-];
-function About() {
+]
+
   return (
     <div className="about">
       <div className="us">
@@ -53,19 +52,19 @@ function About() {
           are the best collaborative team EVER! 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️
         </p>
       </div>
-      <article>
         <ul className="creators">
           {creators.map((creator) => {
             return (
+              <li key = { creator.id }>
               <CreatorCard
                 img={creator.img}
-                creator={creator}
-                key={creator.id}
+                creator={creator.name}
               />
+              </li>
             );
           })}
         </ul>
-      </article>
+  
     </div>
   );
 }
