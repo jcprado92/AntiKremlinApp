@@ -33,8 +33,8 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={() => setShow(true)}>Show Modal</button>
-      <Modal title="My Modal"show={show} onClose={() => setShow(false)}><p>This is modal body</p></Modal>
+      {/* <button onClick={() => setShow(true)}>Show Modal</button> */}
+      {/* <Modal title="My Modal"show={show} onClose={() => setShow(false)}><p>This is modal body</p></Modal> */}
       <Router>
         <Navbar setSearch={setSearch} setMaxResult={setMaxResult} />
         <div className="main__videos">
