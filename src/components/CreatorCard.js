@@ -1,8 +1,8 @@
 import React from "react";
 import "./common/About.css"
 
-function CreatorCard( {props} ) {
-const {id, name, status, brief, description, linkedIn} = props;
+function CreatorCard( {creator} ) {
+const {id, name, status, brief, description, linkedIn} = creator;
  
   const selectedCreator = creator.id;
   return (

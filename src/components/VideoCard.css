@@ -1,10 +1,8 @@
 .videoCard {
     height: 300px;
-  
-    width: 300px;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     background-color: #f9f9f9;
     border-radius: 10px;
 }

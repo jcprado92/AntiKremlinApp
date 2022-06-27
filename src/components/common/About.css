@@ -1,6 +1,5 @@
 .about {
     margin-top: 16px;
-    width: 400px;
     padding-right: 20px;
     margin-right: 20px;
     padding-left: 20px;
@@ -22,12 +21,10 @@
 .creatorCard {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    border: 1px solid black;
+    /* flex-wrap: wrap; */
+    border: 1px solid rgb(153, 149, 149);
     height: 350px;
     margin-top: 40px;
-    width: 300px;
-    float: left;
     background-color: white;
    
     padding: 20px;

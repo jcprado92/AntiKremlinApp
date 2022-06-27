@@ -1,5 +1,5 @@
 .search-display {
-    flex: 1;
+    /* flex-wrap: wrap; */
    background-color: #f9f9f9;
    padding: 40px 20px;
    padding-bottom: 0;
@@ -12,7 +12,7 @@ h3 {
 .search-display {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 li {
     list-style: none;
