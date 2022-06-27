@@ -7,11 +7,10 @@ import { Link } from "react-router-dom";
 import CreatorCard from "../CreatorCard";
 import "./About.css";
 
-
-function About() {
 const imgURL = adnan8;
 const imgURL2 = jede8;
 const imgURL3 = john8;
+
 const creators = [
   {
     name: "Adnan",
@@ -20,7 +19,7 @@ const creators = [
     status: "Pursuit Fellow",
     description: "Coding, computer software & hardware!",
     linkedIn: "https://www.linkedin.com/in/adnan-abubakar-adams/",
-    brief: ""
+    brief: "",
   },
   {
     name: "Jede",
@@ -29,7 +28,7 @@ const creators = [
     status: "Pursuit Fellow",
     description: "Artist, Tango dancer, DJ, software engineer!",
     linkedIn: "https://www.linkedin.com/in/jedeb/",
-    brief: ""
+    brief: "",
   },
   {
     name: "John",
@@ -38,10 +37,10 @@ const creators = [
     status: "Pursuit Fellow",
     description: "Coder, avid cycler, and photographer!",
     linkedIn: "https://www.linkedin.com/in/johnprado/",
-    brief: ""
+    brief: "",
   },
-]
-
+];
+function About() {
   return (
     <div className="about">
       <div className="us">
@@ -52,19 +51,17 @@ const creators = [
           are the best collaborative team EVER! 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️ 🧚‍♀️
         </p>
       </div>
+      <article>
         <ul className="creators">
           {creators.map((creator) => {
             return (
-              <li key = { creator.id }>
-              <CreatorCard
-                img={creator.img}
-                creator={creator.name}
-              />
-              </li>
+              // <li key={creator.id}>
+                <CreatorCard img={creator.img} creator={creator} key={creator.id}/>
+             
             );
           })}
         </ul>
-  
+      </article>
     </div>
   );
 }

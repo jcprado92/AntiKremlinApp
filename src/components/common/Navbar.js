@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 // import About from "./About";
 
 import homeIcon from "../assets/homeIcon.png"
+import aboutIcon from "../assets/aboutIcon.png"
 
 import Search from "../Search";
 import "./Navbar.css";
@@ -16,11 +17,11 @@ function Navbar({ setSearch, setMaxResult }) {
           <h5>
             <Link to="/"><img src={homeIcon} className="logo" alt="AJJTube" /></Link>
             </h5>
-            <h5>
+            {/* <h5>
             <Link to="/"><img src=".../homeIcon.png" alt="AJJTube" /></Link>
-            </h5>
+            </h5> */}
             <h5>
-            <Link to="/about"><img src=".../aboutIcon.png" alt="Creators" /></Link>
+            <Link to="/about"><img src={aboutIcon} className="about" alt="Creators" /></Link>
           </h5>
         </div>
         <div className="navBar__search">

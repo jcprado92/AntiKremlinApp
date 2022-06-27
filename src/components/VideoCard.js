@@ -13,7 +13,7 @@ const VideoCard = ({ video }) => {
           src={video.snippet.thumbnails.medium.url}
         />
       </Link>
-      <div classname="videoCard-info">
+      <div className="videoCard-info">
         <h4>{video.snippet.title}</h4>
         <p>{video.snippet.description}</p>
       </div>
