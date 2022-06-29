@@ -6,7 +6,7 @@ export default function Home({ videos, setVideos }) {
 
   useEffect(() => {
     fetch(
-      `https://www.googleapis.com/youtube/v3/search?part=snippet&q=spongebobdidwhat&maxResults=20&type=video&key=${process.env.REACT_APP_API_KEY}`
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&q=react&maxResults=20&type=video&key=${process.env.REACT_APP_API_KEY}`
     )
       .then((response) => response.json())
       .then((data) => setVideos(data.items));
